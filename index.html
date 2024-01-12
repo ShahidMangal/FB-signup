@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook - Log In or Sign Up</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+  }
+  .top-bar {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-bar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .top-bar .login-form {
+    display: flex;
+    align-items: center;
+  }
+  .top-bar .login-form input[type="text"],
+  .top-bar .login-form input[type="password"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    height: 20px;
+  }
+  .top-bar .login-form input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .top-bar .login-form a {
+    font-size: 12px;
+    color: #9cb4d8;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .login-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .login-info {
+    flex-basis: 45%;
+    margin-right: 10%;
+  }
+  .signup-form {
+    flex-basis: 45%;
+  }
+  .signup-form form {
+    margin-top: 20px;
+  }
+  .signup-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #165db5;
+  }
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+    .login-info,
+    .signup-form {
+      flex-basis: 100%;
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">facebook</div>
+    <form class="login-form" action="#" method="post">
+      <input type="text" placeholder="Email or Phone">
+      <input type="password" placeholder="Password">
+      <input type="submit" value="Log In">
+      <a href="#">Forgot account?</a>
+    </form>
+  </div>
+  <div class="container">
+    <div class="header">
+      <img src="facebook.png" alt="Facebook logo">
+      <h1>Connect with friends and the world around you on Facebook.</h1>
+    </div>
+    <div class="login-container">
+      <div class="login-info">
+        <p>See photos and updates from friends in News Feed.</p>
+        <p>Share what's new in your life on your Timeline.</p>
+        <p>Find more of what you're looking for with Facebook Search.</p>
+      </div>
+      <div class="signup-form">
+        <h2>Sign Up</h2>
+        <p>It's free and always will be.</p>
+        <form action="#">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="email" placeholder="Mobile number or email">
+          <input type="password" placeholder="New password">
+          <input type="date">
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="male"> Male
+          <input type="submit" value="Sign Up">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
